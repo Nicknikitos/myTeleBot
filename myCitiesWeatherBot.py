@@ -23,12 +23,11 @@ def get_weather(message):
         wind = data['wind']['speed']
         bot.reply_to(message, f"Сейчас погода: {temp} °C. Скорость ветра: {wind} м/с.")
 
+        image = "oblacno.jpeg"
         if weather == "Clear":
             image = "sun.jpeg"
         if weather == "Rain":
             image = "rain.jpeg"
-        if weather == "Clouds":
-            image = "oblacno.jpeg"
         if weather == "Snow":
             image = "snow.jpeg"
 
